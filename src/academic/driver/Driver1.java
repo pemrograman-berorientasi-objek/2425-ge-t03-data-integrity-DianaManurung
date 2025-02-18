@@ -10,6 +10,7 @@ import academic.model.Student;
 import academic.model.Enrollment;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
 
@@ -59,6 +60,13 @@ public class Driver1 {
                     break;
             }
         }
+
+        courses.sort(Comparator.comparing(Course::getId));
+        students.sort(Comparator.comparing(Student::getNim));
+        enrollments.sort(Comparator.comparing(Enrollment::getCourseId)
+                                   .thenComparing(Enrollment::getStudentId)
+                                   .thenComparing(Enrollment::getYear)
+                                   .thenComparing(Enrollment::getSemester));
 
         for (Course course : courses) {
             System.out.println(course);
