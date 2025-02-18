@@ -68,7 +68,7 @@ package academic.driver;
          }
  
          for(Enrollment enrollment : enrollments){
-             System.out.println(enrollment.getId() + "|" + enrollment.getNim() + "|" + enrollment.getAkt() + "|" + enrollment.getSemester() + "|" + "None");
+             System.out.println(enrollment.getId() + "|" + enrollment.getNim() + "|" + enrollment.getAkt() + "|" + enrollment.getSemester() + "|" + enrollment.getGrade());
          }
  
          sc.close();
