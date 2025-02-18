@@ -1,8 +1,8 @@
 package academic.model;
 
 /**
- * @auther 12S23040 Diana Manurung
- * @auther 12S23047 Jennifer Sihotang
+ * @author 12S23040 Diana Manurung
+ * @author 12S23047 Jennifer Sihotang
  */
 
 public class Course {
@@ -18,36 +18,20 @@ public class Course {
         this.grade = grade;
     }
 
-    public String getId() {
+    public String getid() {
         return this.id;
     }
 
-    public String getCourse_name() {
+    public String getcourse_name() {
         return this.course_name;
     }
 
-    public void setCourse_name(String course_name) {
-        this.course_name = course_name;
-    }
-
-    public int getSks() {
+    public int getsks() {
         return this.sks;
     }
 
-    public void setSks(int sks) {
-        this.sks = sks;
-    }
-
-    public String getGrade() {
+    public String getgrade() {
         return this.grade;
     }
 
-    public void setGrade(String grade) {
-        this.grade = grade;
-    }
-
-    @Override
-    public String toString() {
-        return id + "|" + course_name + "|" + sks + "|" + grade;
-    }
 }

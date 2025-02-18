@@ -1,21 +1,21 @@
 package academic.model;
 
 /**
- * @auther 12S23040 Diana Manurung
- * @auther 12S23047 Jennifer Sihotang
+ * @author 12S23040 Diana Manurung
+ * @author 12S23047 Jennifer Sihotang
  */
 
 public class Student {
     private String nim;
     private String name;
-    private int year;
-    private String program;
+    private int akt;
+    private String prodi;
 
-    public Student(String nim, String name, int year, String program) {
-        this.nim = nim;
-        this.name = name;
-        this.year = year;
-        this.program = program;
+    public Student(String _nim, String _name, int _akt, String _prodi) {
+        this.nim = _nim;
+        this.name = _name;
+        this.akt = _akt;
+        this.prodi = _prodi;
     }
 
     public String getNim() {
@@ -26,16 +26,11 @@ public class Student {
         return this.name;
     }
 
-    public int getYear() {
-        return this.year;
+    public int getakt() {
+        return this.akt;
     }
 
-    public String getProgram() {
-        return this.program;
-    }
-
-    @Override
-    public String toString() {
-        return nim + "|" + name + "|" + year + "|" + program;
+    public String getprodi() {
+        return this.prodi;
     }
 }
