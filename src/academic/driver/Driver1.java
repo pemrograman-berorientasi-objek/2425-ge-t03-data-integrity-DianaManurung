@@ -59,6 +59,22 @@ package academic.driver;
             }
         });
 
+        Collections.sort(students, new Comparator<Student>(){
+            public int compare(Student s1, Student s2){
+                return s1.getNim().compareTo(s2.getNim()); 
+            }
+        });
+
+        Collections.sort(enrollments, new Comparator<Enrollment>(){
+            public int compare(Enrollment e1, Enrollment e2){
+                int courseCompare = e1.getId().compareTo(e2.getId());
+                if (courseCompare != 0) {
+                    return courseCompare;
+                }
+                return e1.getNim().compareTo(e2.getNim());
+            }
+        });
+
         for(Course course : courses){
             System.out.println(course.getid() + "|" + course.getcourse_name() + "|" + course.getsks() + "|" + course.getgrade());
         }
