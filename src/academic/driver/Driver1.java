@@ -1,8 +1,8 @@
 package academic.driver;
 
 /**
- * @author 12S23040 Diana Manurung
- * @author 12S23047 Jennifer Sihotang
+ * Author: 12S23040 Diana Manurung
+ * Author: 12S23047 Jennifer Sihotang
  */
 
 import academic.model.Course;
@@ -68,7 +68,7 @@ public class Driver1 {
         }
 
         for(Enrollment enrollment : enrollments){
-            System.out.println(enrollment.getId() + "|" + enrollment.getNim() + "|" + enrollment.getAkt() + "|" + enrollment.getSemester());
+            System.out.println(enrollment.getId() + "|" + enrollment.getNim() + "|" + enrollment.getAkt() + "|" + enrollment.getSemester() + "|" + enrollment.getGrade());
         }
 
         sc.close();
